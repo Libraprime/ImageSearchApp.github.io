@@ -1,3 +1,14 @@
+const apiKey = "3aHkxAeszwU6Y7rCyFXHWknFOpU6zcqymSnG-x8NJEk";
+
+const formEl = document.querySelector("form");
+
+const searchInputEl = document.getElementById("search-input");
+
+const resultsEl = document.querySelector(".results");
+
+const showMoreEl = document.getElementById("show-more");
+
+
 let inputData = "";
 let page = 1;
 
