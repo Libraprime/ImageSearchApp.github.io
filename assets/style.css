@@ -1,0 +1,128 @@
+body {
+    background: #f9f9f9;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 4%;
+    margin-bottom: 6%;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6%;
+}
+
+#search-input {
+    width: 60%;
+    max-width: 400px;
+    padding: 1% 2%;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    color: #333;
+}
+
+#search-button {
+    padding: 1% 2%;
+    background: #4caf50;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background .3s ease-in-out;
+}
+
+
+#search-button: hover {
+    background: 3e8e41;
+}
+
+.results {
+    display: flex;
+    flex-wrap:  wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 2%;
+}
+
+.result {
+    margin-bottom: 6%;
+    width: 30%;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.result :hover {
+    transform: scale(1.05)
+}
+
+.result img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform .5s ease-in-out;
+}
+
+.result a {
+    padding: 1%;
+    display: block;
+    color: #333;
+    text-decoration: none;
+    transition: background .5s ease-in-out;
+}
+
+.result:hover a {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+#show-more {
+    background: #008cba;
+    border: none;
+    color: #fff;
+    padding: 1% 2%;
+    display: block;
+    margin: 2% auto;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background .5 ease-in-out;
+    display : none;
+}
+
+#show-more:hover {
+    background: #0077b5;
+}
+
+@media screen and (max-width: 768px){
+    .result {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .result {
+        width: 100%;
+    }
+    
+    form {
+        flex-direction: column;
+    }
+    
+    #search-input {
+        margin-bottom: 20px;
+        width: 80%;
+    }
+}
